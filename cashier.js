@@ -95,7 +95,13 @@ let cashBack;
 
 //OTHER SOLUTION
 
-cashier(2.12,50)
+cashier(3.79, 50);
+cashier(13.75, 40);
+cashier(1.74, 5);
+cashier(10.75, 5);
+cashier(33, 50);
+cashier(33.12, 44);
+cashier(22.13, 44);
 function cashier(price,paid){
     let change = parseFloat((paid - price).toFixed(2))
     console.log(`Price: ${price} \nPaid Amount: ${paid} \nChange: ${(change)}`)
@@ -153,6 +159,7 @@ function cashier(price,paid){
         change = change % curr9;
         console.log(`${amountOfNotes} x ${curr9}`)
     }
+    console.log(`-------------------------------------`)
 }
 
 
